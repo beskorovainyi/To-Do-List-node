@@ -1,0 +1,68 @@
+body {
+	font-family: 'monospace', sans-serif;
+	background: grey;
+}
+
+header {
+	text-align: center;
+}
+header h1 {
+	font-size: 70px;
+	font-weight: 300;
+	margin: 80px 0 15px;
+	color: darkslategrey;
+}
+header h1 span {
+	font-weight: 400;
+}
+
+.form {
+	width: 800px;
+	margin: 50px auto 20px;
+}
+
+#todoInput {
+	width: 100%;
+	height: 60px;
+	background: none;
+	border: none;
+	border-bottom: 1px solid #34495e;
+	outline: none;
+	font: 300 28px 'Ubuntu', sans-serif;
+	padding: 20px;
+	color: #34495e;
+}
+
+.list {
+	width: 800px;
+	margin: 0 auto;
+}
+.task {
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	font-size: 20px;
+	padding: 0 20px;
+	color: whitesmoke;
+	transition: all .5s ease;
+}
+.task:hover {
+	background: rgba(0, 0, 0, .02);
+	cursor: pointer;
+}
+
+.task:hover span{
+	opacity: 1;
+}
+
+.done {
+	text-decoration: line-through;
+	color: burlywood;
+}
+
+li span {
+  float: right;
+  color: red;
+  transition: all 0.5s;
+  opacity: 0;
+}
